@@ -22,7 +22,7 @@ namespace StringCalculator
             int n = 0;
             int[] nums = s.Split(delims, StringSplitOptions.RemoveEmptyEntries)
                 .Select(str => Int32.Parse(str))
-                .Where(i => i <= 1000)
+                .Where(i => i <= 700)
                 .ToArray();
 
             if (nums.Any(n => n < 0)) throw new ArgumentException("negative number");
